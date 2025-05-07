@@ -1,7 +1,11 @@
-import React from 'react';
 import '../components/styles/candle.css';
 
-export const Candle = ({ isLit = true, onClick }) => {
+interface CandleProps {
+    isLit?: boolean;
+    onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
+  }
+  
+  export const Candle: React.FC<CandleProps> = ({ isLit = true, onClick }) => {
     return (
         <div className="wrapper">
             <div className="center">
