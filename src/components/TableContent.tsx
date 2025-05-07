@@ -1,4 +1,4 @@
-import './styles/TableContent.css'
+import './styles/tableContent.css'
 
 export const TableContent = () => {
     const tableOfContents = [
