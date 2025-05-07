@@ -164,7 +164,8 @@ export const MyBook: React.FC = () => {
       <Page number="17" title="Projects"><Projects index1={3} index2={4} /></Page>
       <Page number="18" title="Projects"><Projects index1={4} index2={5} /></Page>
       <Page number="19" title="Projects"><Projects index1={5} index2={6} /></Page>
-      <PageCover number="20"></PageCover>
+      <Page number="20" title="Projects"><Projects index1={6} index2={7} /></Page>
+      <PageCover number="21"></PageCover>
     </HTMLFlipBook>
   );
 };

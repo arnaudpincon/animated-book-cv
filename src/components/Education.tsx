@@ -14,7 +14,7 @@ const Education  = ({ index1 = 0, index2 = 3 }) => {
       icon: Code
     },
     {
-      period: "01/2022 - 02/2022",
+      period: "09/2022 - 12/2022",
       title: "Certified Scrum PSD I",
       institution: "Scrum.org",
       description: "Certified Scrum Professional (CSP-SD) with expertise in Agile methodologies, focusing on iterative development, team collaboration, and continuous improvement.",

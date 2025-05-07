@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Phone, Mail, MapPin, Linkedin, FileJson, Palette,
-  Atom, ArrowRight, Server, LifeBuoy, Zap, Cloud, Container,
+  Atom, ArrowRight, Server, LifeBuoy, Zap, Cloud, Container, PersonStanding, MonitorSmartphone,
   type LucideIcon
 } from "lucide-react";
 import '../components/styles/contact.css';
@@ -28,17 +28,17 @@ const Contacts: React.FC = () => {
   ];
  
   const references: ContactItem[] = [
-    { name: "Emmanuel Goutallier | Partner Executive | APAC - onepoint", icon: "Atom", type: "link", value: "https://www.linkedin.com/in/emmanuel-goutallier-880b0511/?originalSubdomain=au" },
-    { name: "Siham Nouar | Head of Digital Platform | APAC - onepoint", icon: "ArrowRight", type: "link", value: "https://www.linkedin.com/in/sihamnouar/" },
-    { name: "Adrien Follin | CTO | APAC - onepoint", icon: "Server", type: "link", value: "https://www.linkedin.com/in/adrienfollin/" },
-    { name: "Cécile Rioult | Project/Product Manager & Agile Delivery Lead", icon: "Server", type: "link", value: "https://www.linkedin.com/in/cecile-rioult-boczmak/?originalSubdomain=sg" },
+    { name: "Emmanuel Goutallier | Partner Executive APAC onepoint", icon: "Atom", type: "link", value: "https://www.linkedin.com/in/emmanuel-goutallier-880b0511/?originalSubdomain=au" },
+    { name: "Siham Nouar | Head of Digital & Platform APAC onepoint", icon: "MonitorSmartphone", type: "link", value: "https://www.linkedin.com/in/sihamnouar/" },
+    { name: "Adrien Follin | CTO APAC onepoint", icon: "Server", type: "link", value: "https://www.linkedin.com/in/adrienfollin/" },
+    { name: "Cécile Rioult | Project/Product Manager & Agile Delivery Lead", icon: "PersonStanding", type: "link", value: "https://www.linkedin.com/in/cecile-rioult-boczmak/?originalSubdomain=sg" },
   ];
  
   // Function to get the icon component based on name
   const getIcon = (iconName: string): LucideIcon => {
     const icons: IconMap = {
       Phone, Mail, MapPin, Linkedin, FileJson, Palette,
-      Atom, ArrowRight, Server, LifeBuoy, Zap, Cloud, Container
+      Atom, ArrowRight, Server, LifeBuoy, Zap, Cloud, Container, PersonStanding, MonitorSmartphone
     };
     return icons[iconName];
   };
@@ -65,7 +65,7 @@ const Contacts: React.FC = () => {
     <div className="contact-container">
       <div className="grid-container">
         <div className="section">
-          <h3 className="section-title">Contacts</h3>
+          <h3 className="section-title">Contact Details</h3>
           <div className="contact-grid">
             {contacts.map((contact, index) => {
               const IconComponent = getIcon(contact.icon);

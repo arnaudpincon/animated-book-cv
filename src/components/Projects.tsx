@@ -33,10 +33,17 @@ const Projects = ({ index1 = 0, index2 = 1 }) => {
       icon: LeafyGreen
     },
     {
+      title: "GB Assistant: chatBot",
+      link: "",
+      description: "Developed a full-stack internal chatbot using Next.js and Azure for Gallagher Bassett, enabling employees to query corporate documents using natural language. The interface included Azure AD B2C authentication, document upload, source referencing for each response, and a like/dislike feedback mechanism. The backend, built with Python (FastAPI), employed a retrieval-augmented generation (RAG) pipeline to deliver accurate, contextual, and verifiable answers.",
+      technologies: ["Next.js", "Azure Cloud", "Python", "Open AI"],
+      icon: Bot
+    },
+    {
       title: "Detective GenAI: Video Game",
       link: "",
       description: "Designed an experimental GenAI-powered detective game in Python with Gradio UI and multi-agent LLM backend (OpenAI, Mistral, LLaMA 3). Players interact via chatbot to explore, gather clues, question NPCs, and submit theories validated by specialized AI agents",
-      technologies: ["Next.js", "Node.js", "Azure Cloud", "Carbon API"],
+      technologies: ["Python", "Gradio", "Open AI"],
       icon: Bot
     },
     {
