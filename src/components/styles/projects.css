@@ -1,0 +1,79 @@
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-icon{
+    color: #92400E;
+  }
+  
+  .projects-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: serif;
+    color: #92400E;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #FCD34D;
+    padding-bottom: 8px;
+  }
+  
+  .project-item {
+    margin-bottom: 32px;
+  }
+  
+  .project-header {
+    margin-bottom: 12px;
+  }
+  
+  .project-title-container {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  
+  .project-title {
+    font-size: 20px;
+    font-family: serif;
+    color: #92400E;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .project-link {
+    font-size: 14px;
+    color: #B45309;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+    color: #92400E;
+  }
+  
+  .project-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #78350F;
+    text-align: justify;
+  }
+  
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .project-technology {
+    background-color: #FDE68A;
+    color: #92400E;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+  }

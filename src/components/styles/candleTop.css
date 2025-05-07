@@ -1,0 +1,168 @@
+.candle-container {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.candle {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    left: 18%;
+    top: 5%;
+}
+
+.candle-edge {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.wax-texture {
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    top: 5px;
+    left: 5px;
+    background: radial-gradient(circle at 70px 60px, 
+                                 #ffffff 0%, 
+                                 #f5f5f5 30%, 
+                                 #ececec 70%);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.wick {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    background-color: #8B4513;
+    left: 48%;
+    top: 35%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+    z-index: 10;
+    opacity: 0.4;
+}
+
+.wick-burnt {
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    top: 76px;
+    left: 69px;
+    border-radius: 50%;
+}
+
+.flame {
+    position: absolute;
+    width: 55px; 
+    height: 80px;
+    background: radial-gradient(ellipse at bottom, 
+                                    #ffb800 0%, 
+                                    #ff8100 30%, 
+                                    transparent 100%);
+    left: 30%; /* Recentrée avec la nouvelle largeur */
+    border-radius: 90% 90% 60% 60%;
+    animation: flicker 0.5s infinite alternate;
+    transform-origin: center bottom;
+    box-shadow: 0px 0px 20px 0px rgba(255, 160, 0, 0.6);
+    z-index: 15;
+}
+
+.flame-off {
+    position: absolute;
+}
+
+.glow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, 
+                                rgba(255, 184, 0, 0.7) 0%, 
+                                rgba(255, 129, 0, 0.3) 40%, 
+                                transparent 70%);
+    top: 56px;
+    left: 60px;
+    border-radius: 50%;
+    filter: blur(5px);
+}
+
+.support {
+    background-color: rgb(143, 81, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes flicker {
+    0% { transform: scaleY(1.0) rotate(-1deg); }
+    25% { transform: scaleY(0.9) rotate(1deg); }
+    50% { transform: scaleY(1.1) rotate(-1deg); }
+    75% { transform: scaleY(0.95) rotate(0deg); }
+    100% { transform: scaleY(1.05) rotate(1deg); }
+}
+
+.wax-drips {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -5px;
+    left: -5px;
+}
+
+.drip {
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.drip:nth-child(1) {
+    width: 15px;
+    height: 20px;
+    top: 30px;
+    left: 20px;
+    transform: rotate(45deg);
+}
+
+.drip:nth-child(2) {
+    width: 18px;
+    height: 12px;
+    top: 100px;
+    left: 10px;
+    transform: rotate(20deg);
+}
+
+.drip:nth-child(3) {
+    width: 12px;
+    height: 16px;
+    top: 110px;
+    left: 130px;
+    transform: rotate(-30deg);
+}
+
+.drip:nth-child(4) {
+    width: 10px;
+    height: 14px;
+    top: 50px;
+    left: 130px;
+    transform: rotate(-60deg);
+}

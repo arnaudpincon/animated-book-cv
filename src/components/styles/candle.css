@@ -1,0 +1,110 @@
+
+  
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  /* Center positioning */
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Candle styling */
+  .candle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: appear 1s ease forwards;
+    animation-delay: 2s;
+  }
+  
+  .candle-flame {
+    width: 15px;
+    height: 30px;
+    background: var(--flame);
+    border-radius: 8px 8px 8px 8px / 20px 20px 8px 8px;
+    box-shadow: 0px 0px 20px 0px var(--flame-shadow);
+    animation: flame-twirl 15s ease infinite, glow 2s ease infinite;
+  }
+
+  .candle-flame-off {
+    width: 15px;
+    height: 30px;
+  }
+  
+  .candle-wick {
+    height: 10px;
+    width: 3px;
+    background: var(--wick);
+  }
+  
+  .candle-wax {
+    width: 40px;
+    height: 110px;
+    background: var(--wax);
+    border-radius: 6px;
+    box-shadow: inset -15px 0px 0px -10px var(--wax-shadow);
+  }
+  
+  .candle-stand {
+    width: 100px;
+    height: 8px;
+    background: var(--stand);
+    border-radius: 3px;
+  }
+  
+  /* Animations */
+  @keyframes flame-twirl {
+    0%,
+    22%,
+    49%,
+    62%,
+    81%,
+    100% {
+      border-radius: 2px 14px 8px 8px / 20px 20px 8px 8px;
+    }
+    14%,
+    32%,
+    56%,
+    70%,
+    89% {
+      border-radius: 14px 2px 8px 8px / 20px 20px 8px 8px;
+    }
+  }
+  
+  @keyframes glow {
+    0%,
+    30%,
+    60%,
+    80%,
+    100% {
+      box-shadow: 0 0 20px 0 var(--flame);
+    }
+    20%,
+    50%,
+    70% {
+      box-shadow: 0 0 22px 0 var(--flame);
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

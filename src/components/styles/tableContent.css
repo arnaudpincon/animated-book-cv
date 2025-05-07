@@ -1,0 +1,123 @@
+.table-of-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.toc-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 700px;
+}
+
+.toc-binding {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  background: linear-gradient(to right, #FBBF24, transparent);
+}
+
+.toc-content {
+  position: absolute;
+  inset: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.toc-header {
+  text-align: center;
+  font-size: 24px;
+  font-family: serif;
+  color: #92400E;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #FCD34D;
+  padding-bottom: 8px;
+}
+
+.toc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.toc-item {
+  margin-bottom: 8px;
+}
+
+.toc-title-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: relative;
+}
+
+.toc-title-line::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px dotted #D97706;
+  z-index: 1;
+  margin: 0 10px;
+}
+
+.toc-title {
+  font-size: 18px;
+  font-family: serif;
+  color: #92400E;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  padding-right: 8px;
+  background-color: #FEF3C7;
+  position: relative;
+  z-index: 2;
+}
+
+.toc-description {
+  font-size: 14px;
+  color: #78350F;
+  margin-top: 4px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.toc-page {
+  font-size: 16px;
+  color: #B45309;
+  font-weight: bold;
+  background-color: #FEF3C7;
+  position: relative;
+  z-index: 2;
+  padding-left: 8px;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #B45309;
+  font-family: serif;
+}
+
+.corner-fold {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background-color: #FEF3C7;
+  box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.1);
+  transform: rotate(45deg) translate(24px, -24px);
+}

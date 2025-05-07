@@ -1,0 +1,35 @@
+.job-title {
+    font-size: 20px;
+    font-family: serif;
+    color: #B45309;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  .job-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  
+  .responsibilities-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .responsibility-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #78350F;
+  }
+
+  .bullet-point {
+    margin-right: 8px;
+    color: #B45309;
+    font-weight: bold;
+  }
