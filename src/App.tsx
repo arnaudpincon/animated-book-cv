@@ -1,34 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import './fonts.css';
+import { useCallback, useState } from 'react';
+import useSound from 'use-sound';
+import sound from './assets/sound.mp3';
+import { CandleTopView } from './components/CandleTop';
+import { MyBook } from './components/Book';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [isLit, setIsLit] = useState(true);
+
+  const [play] = useSound(sound, {
+    sprite: {
+        blow: [5000, 500],
+        lightOn: [6000, 1000]
+      },
+  });
+    
+  const handleCandleClick = useCallback(() => {
+    play({ id: isLit ? 'blow' : 'lightOn' });
+    setIsLit(prevIsLit => !prevIsLit);
+  }, [isLit, play]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+      <div className={`container ${isLit ? 'room-lit' : 'room-dark'}`}>
+        <CandleTopView isLit={isLit} onClick={handleCandleClick} /> <MyBook />
+    </div>
   )
 }
 

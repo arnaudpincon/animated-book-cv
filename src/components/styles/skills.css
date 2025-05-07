@@ -1,0 +1,107 @@
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .book-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 700px; /* As specified in the requirement */
+  }
+  
+  .book-page {
+    position: absolute;
+    inset: 0;
+    background-color: #FEF3C7; /* amber-50 equivalent */
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .book-binding {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 100%;
+    background: linear-gradient(to right, #FBBF24, transparent); /* amber-200 to transparent */
+  }
+  
+  .skills-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: serif;
+    color: #92400E; /* amber-800 */
+    margin-bottom: 24px;
+    border-bottom: 2px solid #FCD34D; /* amber-300 */
+    padding-bottom: 8px;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    gap: 20px;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-family: serif;
+    color: #B45309; /* amber-700 */
+    margin-bottom: 10px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .skill-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #FEF3C7; /* amber-100 */
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .skill-icon {
+    color: #B45309; /* amber-700 */
+  }
+  
+  .skill-name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .page-number {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #B45309; /* amber-700 */
+    font-family: serif;
+  }
+  
+  .corner-fold {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #FEF3C7; /* amber-100 */
+    box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.1);
+    transform: rotate(45deg) translate(24px, -24px);
+  }

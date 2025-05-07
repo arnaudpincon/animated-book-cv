@@ -1,0 +1,84 @@
+  
+  .education-title {
+    text-align: center;
+    font-size: 15px;
+    font-family: serif;
+    color: #92400E;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #FCD34D;
+    padding-bottom: 8px;
+  }
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .education-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+
+  .title-period-container {
+    display: flex;
+  }
+  
+  .education-icon-container {
+    background-color: #FEF3C7;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 16px;
+    flex-shrink: 0;
+  }
+  
+  .education-icon {
+    color: #B45309;
+  }
+  
+  .education-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .education-period {
+    font-size: 14px;
+    color: #B45309;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .education-degree {
+    font-size: 20px;
+    font-family: serif;
+    color: #92400E;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 8px;
+  }
+  
+  .education-institution {
+    font-size: 14px;
+    color: #B45309;
+    font-style: italic;
+  }
+  
+  .education-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px;
+    color: #78350F;
+  }
+  
+  .corner-fold {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #FEF3C7;
+    box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.1);
+    transform: rotate(45deg) translate(24px, -24px);
+  }
