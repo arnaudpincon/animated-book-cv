@@ -99,8 +99,6 @@ export const MyBook: React.FC = () => {
   const handleStateChange = (state: StateChangeEvent): void => {
     const currentPage = state.object.pages.currentPageIndex;
 
-    console.log(state.data);
-
     if (state.data === "fold_corner") {
       triggerSound.current = false;
     }
