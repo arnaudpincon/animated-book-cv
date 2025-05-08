@@ -8,6 +8,16 @@
   --wax-shadow: #d8deed;
   --wick: #ad87a9;
   --stand: #863803;
+  /* Fonts */
+  --font-xs: 10px;      /* extra small */
+  --font-sm: 12px;      /* small */
+  --font-md: 14px;      /* medium */
+  --font-base: 16px;    /* base */
+  --font-lg: 18px;      /* large */
+  --font-xl: 20px;      /* extra large */
+  --font-2xl: 22px;     /* 2x large */
+  --font-3xl: 24px;     /* 3x large */
+
 }
 
 .logo {
@@ -102,4 +112,32 @@ h2 {
 
 h3 {
   margin: 0;
+}
+
+/* Tablette */
+@media (max-width: 768px) {
+  :root {
+    --font-xs: 9px;
+    --font-sm: 11px;
+    --font-md: 13px;
+    --font-base: 14px;
+    --font-lg: 16px;
+    --font-xl: 18px;
+    --font-2xl: 19px;
+    --font-3xl: 21px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  :root {
+    --font-xs: 8px;
+    --font-sm: 10px;
+    --font-md: 11px;
+    --font-base: 12px;
+    --font-lg: 14px;
+    --font-xl: 16px;
+    --font-2xl: 17px;
+    --font-3xl: 18px;
+  }
 }

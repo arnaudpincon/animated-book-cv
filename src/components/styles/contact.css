@@ -28,7 +28,7 @@
   }
   
   .section-title {
-    font-size: 20px;
+    font-size: var(--font-xl);
     font-family: serif;
     color: #B45309; /* amber-700 */
     margin-bottom: 5px;
@@ -55,6 +55,6 @@
   }
   
   .contact-name {
-    font-size: 14px;
+    font-size: var(--font-md);
     font-weight: 500;
   }

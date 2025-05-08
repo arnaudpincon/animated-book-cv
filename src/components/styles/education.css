@@ -18,7 +18,7 @@
   .education-item {
     display: flex;
     align-items: flex-start;
-    font-size: 12px;
+    font-size: var(--font-sm);
   }
 
   .title-period-container {
@@ -44,14 +44,14 @@
   }
   
   .education-period {
-    font-size: 14px;
+    font-size: var(--font-md);
     color: #B45309;
     font-weight: 500;
     white-space: nowrap;
   }
   
   .education-degree {
-    font-size: 20px;
+    font-size: var(--font-xl);
     font-family: serif;
     color: #92400E;
     font-weight: bold;
@@ -60,13 +60,13 @@
   }
   
   .education-institution {
-    font-size: 14px;
+    font-size: var(--font-md);
     color: #B45309;
     font-style: italic;
   }
   
   .education-description {
-    font-size: 14px;
+    font-size: var(--font-md);
     line-height: 1.6;
     margin: 5px;
     color: #78350F;

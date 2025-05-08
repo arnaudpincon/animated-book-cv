@@ -71,7 +71,7 @@
 }
 
 .toc-title {
-  font-size: 18px;
+  font-size: var(--font-lg);
   font-family: serif;
   color: #92400E;
   font-weight: bold;
@@ -84,7 +84,7 @@
 }
 
 .toc-description {
-  font-size: 14px;
+  font-size: var(--font-md);
   color: #78350F;
   margin-top: 4px;
   margin-left: 20px;
@@ -92,7 +92,7 @@
 }
 
 .toc-page {
-  font-size: 16px;
+  font-size: var(--font-base);
   color: #B45309;
   font-weight: bold;
   background-color: #FEF3C7;

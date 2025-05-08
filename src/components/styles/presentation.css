@@ -1,5 +1,5 @@
 .presentation-container {
-    font-size: 14px;
+    font-size: var(--font-md);
     display: flex;
     flex-direction: column;
     gap: 20px;

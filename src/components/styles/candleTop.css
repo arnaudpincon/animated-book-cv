@@ -166,3 +166,11 @@
     left: 130px;
     transform: rotate(-60deg);
 }
+
+
+/* Tablette */
+@media (max-width: 768px) {
+    .candle-container {
+        display: none;
+    }
+  }

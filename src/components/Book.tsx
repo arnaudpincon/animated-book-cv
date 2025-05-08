@@ -1,6 +1,6 @@
 import HTMLFlipBook from 'react-pageflip';
 import './styles/book.css';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import useSound from 'use-sound';
 import sound from '../assets/sound.mp3';
 import { Presentation } from './Presentation';
@@ -47,6 +47,29 @@ export const MyBook: React.FC = () => {
   const triggerSound = useRef<boolean>(false);
   const soundSequence = useRef<number[]>([1, 2, 3, 4]);
   const currentSoundIndex = useRef<number>(0);
+
+  // États pour les dimensions du livre
+  const [isMobile, setIsMobile] = useState(false);
+
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    if (width <= 768) { // Seuil pour mobile
+      setIsMobile(true);
+    } else if (width <= 1024) { // Seuil pour tablette
+      setIsMobile(false);
+    } else { // Desktop
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+    
+    return () => {
+      window.removeEventListener('resize', updateDimensions);
+    };
+  }, []);
 
   useEffect(() => {
     soundSequence.current = shuffleArray(soundSequence.current);
@@ -131,7 +154,7 @@ export const MyBook: React.FC = () => {
   return (
     <HTMLFlipBook 
       width={500} 
-      height={700} 
+      height={!isMobile ? 700 : 800} 
       mobileScrollSupport={true} 
       className='book-container' 
       showPageCorners={true} 

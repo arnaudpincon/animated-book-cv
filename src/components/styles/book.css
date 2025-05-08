@@ -46,7 +46,7 @@
   .page-header{
     height: 5%;
     text-align: center;
-    font-size: 22px;
+    font-size:  var(--font-3xl);
     font-family: serif;
     color: #92400E; /* amber-800 */
     border-bottom: 2px solid #FCD34D; /* amber-300 */
@@ -101,6 +101,12 @@
     
     .demoPage h1 {
       font-size: 1.5rem;
+    }
+
+    .page-content{
+      margin-top: 32px;
+      margin-left: 10%;
+      margin-right: 15%;
     }
   }
   
