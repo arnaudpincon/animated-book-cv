@@ -4,7 +4,6 @@ import { Code, Award, Lightbulb, GraduationCap } from "lucide-react";
 
 const Education  = ({ index1 = 0, index2 = 3 }) => {
    
-  // Données d'éducation
   const educations = [
     {
       period: "03/2024 - 03/2025",

@@ -1,3 +1,4 @@
+// CandleTop.tsx
 import './styles/candleTop.css'
 
 interface CandleTopViewProps {

@@ -1,3 +1,4 @@
+// Page.ts
 import React from 'react';
 import type { PageChapterProps, PageCoverProps, PageProps } from '../types/page';
 

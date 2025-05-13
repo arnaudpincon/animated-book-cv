@@ -3,7 +3,6 @@ import './styles/experience.css';
 import { Briefcase, Code, Server, Cloud, Bot, PenTool, Users, Zap, VideoIcon, BookOpen } from "lucide-react";
 
 export const Experience = ({ experienceIndex = 0 }) => {
-    // Tableau d'expériences professionnelles
     const experiences = [
         // Expérience 1 - onepoint APAC
         {
@@ -88,7 +87,6 @@ export const Experience = ({ experienceIndex = 0 }) => {
         }
     ];
 
-    // Récupérer l'expérience basée sur l'index fourni (avec protection contre les index hors limites)
     const currentExperience = experiences[experienceIndex] || experiences[0];
 
     return (

@@ -1,3 +1,4 @@
+// Project.tsx
 import { Smartphone, Code, Bot, Pill, LeafyGreen } from 'lucide-react';
 import './styles/projects.css';
 

@@ -1,3 +1,4 @@
+// Skills.tsx
 import React from 'react';
 import {
   Code2, Coffee, FileCode, Database, FileJson, Palette,
