@@ -2,7 +2,6 @@ import { Smartphone, Code, Bot, Pill, LeafyGreen } from 'lucide-react';
 import './styles/projects.css';
 
 const Projects = ({ index1 = 0, index2 = 1 }) => {
-  // Données des projets
   const projects = [
     {
       title: "React Native M1 Singapore: Mobile App",
