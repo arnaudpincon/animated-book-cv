@@ -1,3 +1,4 @@
+// Candle.tsx
 import '../components/styles/candle.css';
 
 interface CandleProps {
