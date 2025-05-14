@@ -6,16 +6,6 @@ export interface PageProps {
   children?: React.ReactNode;
 }
 
-export interface PageCoverProps {
-  number: string;
-  children?: React.ReactNode;
-}
-
-export interface PageChapterProps {
-  number: string;
-  title?: string;
-}
-
 export interface StateChangeEvent {
   data: string;
   object: {

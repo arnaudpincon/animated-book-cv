@@ -1,16 +1,6 @@
 // Page.ts
 import React from 'react';
-import type { PageChapterProps, PageCoverProps, PageProps } from '../types/page';
-
-export const PageCover = React.forwardRef<HTMLDivElement, PageCoverProps>((props, ref) => {
-  return (
-    <div className="page page-cover" ref={ref} data-density="hard">
-      <div className="page-content">
-        <h2>{props.children}</h2>
-      </div>
-    </div>
-  );
-});
+import type { PageProps } from '../types/page';
 
 export const Page = React.forwardRef<HTMLDivElement, PageProps>((props, ref) => {
   return (
@@ -24,7 +14,17 @@ export const Page = React.forwardRef<HTMLDivElement, PageProps>((props, ref) => 
   );
 });
 
-export const PageChapter = React.forwardRef<HTMLDivElement, PageChapterProps>((props, ref) => {
+export const PageCover = React.forwardRef<HTMLDivElement, PageProps>((props, ref) => {
+  return (
+    <div className="page page-cover" ref={ref} data-density="hard">
+      <div className="page-content">
+        <h2>{props.children}</h2>
+      </div>
+    </div>
+  );
+});
+
+export const PageChapter = React.forwardRef<HTMLDivElement, PageProps>((props, ref) => {
   return (
     <div className="page" ref={ref}>
       <div className="page-content">
